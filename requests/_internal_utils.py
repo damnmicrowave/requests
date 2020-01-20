@@ -22,7 +22,7 @@ def to_native_string(string, encoding='ascii'):
         if is_py2:
             out = string.encode(encoding)
         else:
-            out = string.decode(encoding)
+            out = string.decode(encoding, errors='ignore')
 
     return out
 
